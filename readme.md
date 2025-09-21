@@ -6,7 +6,7 @@
 
 # Tutorials
 
-## Setup from this conversation
+## Setup Initial R Repository
 
 This repository was configured to use renv for reproducible environments, a minimal R package scaffold, a bundled Shiny app, and GitHub Actions CI. Follow these steps:
 
@@ -23,7 +23,7 @@ This repository was configured to use renv for reproducible environments, a mini
   - R -e "devtools::test()"
   - R -e "devtools::install_local()"
 
-Transcript: [Conversation transcript](transcripts/conversation-2025-09-21.md)
+Transcript: [Conversation transcript](transcripts/r-repository-setup.md)
 
 ---
 
