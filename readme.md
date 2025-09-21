@@ -8,25 +8,26 @@
 
 ## Setup Initial R Repository
 
-This tutorial summarizes what was configured in this repository and why, and links to a complete transcript that walks through the process end-to-end.
+This tutorial explains, in plain language, how this repository was set up to use R with Cosine.sh and what each moving part does. It links to a full, step-by-step transcript you can read at your own pace.
 
-What the transcript covers
-- Repository goals for Cosine.sh + R and the overall approach
-- Creating a reproducible environment with renv and auto-activation via .Rprofile
-- Scaffolding a minimal R package (DESCRIPTION, R/, tests/) and documenting with roxygen2
-- Bundling a Shiny app under inst/app and exposing a run_app() helper
-- Setting up GitHub Actions to perform R CMD check on pushes/PRs
-- Adding an example analysis script that generates versioned artifacts (CSV/PNG) in outputs/
-- Using .gitignore and .Rbuildignore to keep caches and non-package files out of the build
-- Repository layout and conventions to make collaboration and CI straightforward
+What the transcript covers (plain English)
+- Reproducible setup (renv): A project-specific “list of packages and versions.” It makes your computer and your teammate’s computer use the same R packages. The .Rprofile file automatically turns this on when you open the project.
+- Your “toolbox” (R package): We created a simple R package (a folder of reusable functions). It includes:
+  - Functions in R/
+  - Help pages generated from short comments (roxygen2)
+  - Small tests to catch mistakes (testthat)
+- A small app (Shiny): A clickable web page that uses R. It lives in inst/app and you can open it with run_app(). Great for demos or quick exploration.
+- An example analysis: A single R script that reads data, summarizes it, and saves two files you can share: outputs/summary.csv and outputs/plot.png.
+- Automatic checks (CI): A GitHub “robot” that builds and tests the project each time you push changes. This helps catch problems early and keeps the project consistent.
+- Housekeeping: .gitignore and .Rbuildignore keep temporary files out of Git and out of your package build so you only share what matters.
 
 What you’ll learn by reading it
-- How to structure a new R repository that plays well with Cosine.sh
-- How to initialize and manage renv for reproducibility
-- How to create and export package functions and add unit tests with testthat
-- How to embed and launch a Shiny app from within a package
-- How to wire up CI for continuous checks with r-lib/actions
-- How to produce and track analysis artifacts
+- The basic vocabulary (renv, package, Shiny, CI) explained without jargon
+- How the folders fit together and where to put your own work
+- How analysis files produce shareable results in outputs/
+- How the Shiny app is bundled and launched
+- How automated checks protect your project over time
+- Tips for collaborating without “it works on my machine” problems
 
 Transcript: [Setup Initial R Repository – full transcript](transcripts/r-repository-setup.md)
 
