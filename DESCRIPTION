@@ -12,7 +12,11 @@ LazyData: true
 Depends: R (>= 4.0)
 Imports:
     shiny,
-    ggplot2
+    ggplot2,
+    plotly,
+    dplyr,
+    readr,
+    DT
 Suggests:
     testthat (>= 3.0.0),
     roxygen2,

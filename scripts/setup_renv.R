@@ -13,7 +13,8 @@ if (!file.exists("renv/activate.R")) {
 
 pkgs <- c(
   "dplyr", "ggplot2", "tidyr", "readr",
-  "shiny", "testthat", "devtools", "roxygen2"
+  "shiny", "testthat", "devtools", "roxygen2",
+  "plotly", "DT"
 )
 
 message("Installing packages into the renv library (this may take a moment)...")
