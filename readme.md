@@ -25,6 +25,23 @@ A curated, beginner-friendly list of resources explaining branches, pull request
 - Tutorial: [GitHub for R – step-by-step tutorial](github-for-r.md)
 - Transcript: [Git and GitHub for R users – conversation transcript](transcripts/git-github-resources.md)
 
+## Parkinson’s Gait Datasets (gaitpdb & gaitndd)
+
+This tutorial covers two PhysioNet datasets widely used for Parkinson’s gait research—gaitpdb (in‑shoe force sensors; PD + controls) and gaitndd (footswitch signals; PD, Huntington’s, ALS, controls). It explains what data are included, access/licensing, how to download them into this repo, and how to generate quick characterizations (duration, stride means/variability, swing/stance/double support) using the provided R scripts.
+
+- Transcript: [Parkinson’s Gait Datasets – full transcript](transcripts/pd-gait-datasets.md)
+- Scripts:
+  - Download both datasets: [scripts/download_gait_datasets.R](scripts/download_gait_datasets.R)
+  - Characterize gaitpdb: [scripts/characterize_gaitpdb.R](scripts/characterize_gaitpdb.R)
+  - Characterize gaitndd: [scripts/characterize_gaitndd.R](scripts/characterize_gaitndd.R)
+- Dataset folder notes: [datasets/README.md](datasets/README.md)
+
+Quick commands:
+- Rscript scripts/download_gait_datasets.R
+- Rscript scripts/characterize_gaitpdb.R
+- Rscript scripts/characterize_gaitndd.R
+
+
 ---
 
 Project now includes:

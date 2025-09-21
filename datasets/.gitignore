@@ -1,0 +1,4 @@
+# Ignore all downloaded dataset content by default
+*
+!.gitignore
+!README.md
