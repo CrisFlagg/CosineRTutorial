@@ -6,6 +6,12 @@
 
 # Tutorials
 
+## Cosine Signup and Student Discount
+
+This tutorial explains how to sign up for Cosine (via cosine.sh/ai.cosine.sh), what to expect around the free trial and monthly billing, and practical ways to redeem the “3 months Pro free for students” promotion referenced on LinkedIn—even if the post link isn’t accessible. It includes suggested steps, what to send support, and ready‑to‑use message templates.
+
+Transcript: [Cosine Signup and Student Discount – full transcript](transcripts/cosine-signup.md)
+
 ## Setup Initial R Repository
 
 This brief overview explains how the repo is prepared to use R with Cosine.sh: a reproducible environment (renv), a small R package with documented and tested functions, a simple Shiny app you can open, an example analysis that saves shareable results, and automated GitHub checks to keep things working. The linked transcript walks through why each piece exists, how the folders fit together, and collaboration tips—written for readers without a CS background.
