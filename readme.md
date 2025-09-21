@@ -6,6 +6,25 @@
 
 # Tutorials
 
+## Setup from this conversation
+
+This repository was configured to use renv for reproducible environments, a minimal R package scaffold, a bundled Shiny app, and GitHub Actions CI. Follow these steps:
+
+- Initialize renv and install dependencies:
+  - Rscript scripts/setup_renv.R
+- Run the example analysis and view outputs:
+  - Rscript scripts/analysis.R
+  - outputs/summary.csv, outputs/plot.png
+- Run the Shiny app:
+  - Direct: R -e "shiny::runApp('inst/app')"
+  - Via package helper (after devtools::load_all()): R -e "devtools::load_all(); cosineR::run_app()"
+- Develop and test the package:
+  - R -e "roxygen2::roxygenise()"
+  - R -e "devtools::test()"
+  - R -e "devtools::install_local()"
+
+Transcript: [Conversation transcript](transcripts/conversation-2025-09-21.md)
+
 ---
 
 Project now includes:
