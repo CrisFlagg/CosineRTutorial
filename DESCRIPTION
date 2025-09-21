@@ -1,0 +1,23 @@
+Package: cosineR
+Type: Package
+Title: Minimal R Package Scaffold with Shiny App and Analysis Script
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Cosine", family = "User", role = c("aut", "cre"), email = "user@example.com")
+)
+Description: A minimal R package scaffold that includes a simple utility function, a bundled Shiny app, a sample analysis script, unit tests, and CI.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports:
+    shiny,
+    ggplot2
+Suggests:
+    testthat (>= 3.0.0),
+    roxygen2,
+    devtools
+Config/testthat/edition: 3
+Roxygen: list(markdown = TRUE)
+URL: https://example.com
+BugReports: https://example.com/issues

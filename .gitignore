@@ -1,0 +1,27 @@
+# R session and project files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Build ignore
+.Rbuildignore
+
+# renv caches and libraries
+renv/library/
+renv/staging/
+renv/.cache/
+
+# Outputs
+outputs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Quarto/Rmd caches
+*_cache/
+*.utf8.md
+
+# Node (if any)
+node_modules/
