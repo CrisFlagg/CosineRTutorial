@@ -18,6 +18,13 @@ This brief overview explains how the repo is prepared to use R with Cosine.sh: a
 
 Transcript: [Setup Initial R Repository – full transcript](transcripts/r-repository-setup.md)
 
+## Git and GitHub for R users
+
+A curated, beginner-friendly list of resources explaining branches, pull requests, and daily Git/GitHub workflows, with R/RStudio-specific guidance.
+
+- Tutorial: [GitHub for R – step-by-step tutorial](github-for-r.md)
+- Transcript: [Git and GitHub for R users – conversation transcript](transcripts/git-github-resources.md)
+
 ## Parkinson’s Gait Datasets (gaitpdb & gaitndd)
 
 This tutorial covers two PhysioNet datasets widely used for Parkinson’s gait research—gaitpdb (in‑shoe force sensors; PD + controls) and gaitndd (footswitch signals; PD, Huntington’s, ALS, controls). It explains what data are included, access/licensing, how to download them into this repo, and how to generate quick characterizations (duration, stride means/variability, swing/stance/double support) using the provided R scripts.
@@ -33,6 +40,7 @@ Quick commands:
 - Rscript scripts/download_gait_datasets.R
 - Rscript scripts/characterize_gaitpdb.R
 - Rscript scripts/characterize_gaitndd.R
+
 
 ---
 
