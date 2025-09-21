@@ -8,22 +8,27 @@
 
 ## Setup Initial R Repository
 
-This repository was configured to use renv for reproducible environments, a minimal R package scaffold, a bundled Shiny app, and GitHub Actions CI. Follow these steps:
+This tutorial summarizes what was configured in this repository and why, and links to a complete transcript that walks through the process end-to-end.
 
-- Initialize renv and install dependencies:
-  - Rscript scripts/setup_renv.R
-- Run the example analysis and view outputs:
-  - Rscript scripts/analysis.R
-  - outputs/summary.csv, outputs/plot.png
-- Run the Shiny app:
-  - Direct: R -e "shiny::runApp('inst/app')"
-  - Via package helper (after devtools::load_all()): R -e "devtools::load_all(); cosineR::run_app()"
-- Develop and test the package:
-  - R -e "roxygen2::roxygenise()"
-  - R -e "devtools::test()"
-  - R -e "devtools::install_local()"
+What the transcript covers
+- Repository goals for Cosine.sh + R and the overall approach
+- Creating a reproducible environment with renv and auto-activation via .Rprofile
+- Scaffolding a minimal R package (DESCRIPTION, R/, tests/) and documenting with roxygen2
+- Bundling a Shiny app under inst/app and exposing a run_app() helper
+- Setting up GitHub Actions to perform R CMD check on pushes/PRs
+- Adding an example analysis script that generates versioned artifacts (CSV/PNG) in outputs/
+- Using .gitignore and .Rbuildignore to keep caches and non-package files out of the build
+- Repository layout and conventions to make collaboration and CI straightforward
 
-Transcript: [Conversation transcript](transcripts/r-repository-setup.md)
+What you’ll learn by reading it
+- How to structure a new R repository that plays well with Cosine.sh
+- How to initialize and manage renv for reproducibility
+- How to create and export package functions and add unit tests with testthat
+- How to embed and launch a Shiny app from within a package
+- How to wire up CI for continuous checks with r-lib/actions
+- How to produce and track analysis artifacts
+
+Transcript: [Setup Initial R Repository – full transcript](transcripts/r-repository-setup.md)
 
 ---
 
