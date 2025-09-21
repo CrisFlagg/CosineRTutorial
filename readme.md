@@ -18,6 +18,13 @@ This brief overview explains how the repo is prepared to use R with Cosine.sh: a
 
 Transcript: [Setup Initial R Repository – full transcript](transcripts/r-repository-setup.md)
 
+## Git and GitHub for R users
+
+A curated, beginner-friendly list of resources explaining branches, pull requests, and daily Git/GitHub workflows, with R/RStudio-specific guidance.
+
+- Tutorial: [GitHub for R – step-by-step tutorial](github-for-r.md)
+- Transcript: [Git and GitHub for R users – conversation transcript](transcripts/git-github-resources.md)
+
 ---
 
 Project now includes:
