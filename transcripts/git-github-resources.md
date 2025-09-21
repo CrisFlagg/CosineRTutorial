@@ -141,6 +141,10 @@ Acknowledged and updated this file to contain the full conversation log in the s
 
 ---
 
+## Repository Updates
+
+- Created a top-level tutorial page: [github-for-r.md](../github-for-r.md) and linked it from the README under “Git and GitHub for R users”.
+
 ## Links Referenced
 
 - Hello World: https://docs.github.com/en/get-started/quickstart/hello-world

@@ -22,7 +22,8 @@ Transcript: [Setup Initial R Repository – full transcript](transcripts/r-repos
 
 A curated, beginner-friendly list of resources explaining branches, pull requests, and daily Git/GitHub workflows, with R/RStudio-specific guidance.
 
-Transcript: [Git and GitHub for R users – full transcript](transcripts/git-github-resources.md)
+Tutorial: [GitHub for R – step-by-step tutorial](github-for-r.md)
+Transcript: [Git and GitHub for R users – conversation transcript](transcripts/git-github-resources.md)
 
 ---
 
