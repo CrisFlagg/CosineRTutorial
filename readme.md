@@ -41,6 +41,38 @@ Quick commands:
 - Rscript scripts/characterize_gaitpdb.R
 - Rscript scripts/characterize_gaitndd.R
 
+## Shiny Gait Explorer (plotly + raw trial viewer)
+
+Explore gaitpdb and gaitndd interactively with a bundled Shiny app that includes:
+- Distribution panel (plotly): histogram of any numeric metric, colorable by group (PD vs control where available), adjustable bins.
+- Trial browser (DT): filterable/selectable table of summarized trials/records with key metrics.
+- Raw trial viewer (gaitpdb): plots left/right total force over time, overlays heel‑strike markers with an adjustable threshold slider.
+
+Transcript: [Shiny Gait Explorer – full transcript](transcripts/shiny-gait-explorer.md)
+
+Files (app and supporting setup):
+- App entry: [inst/app/app.R](inst/app/app.R)
+- renv installer (adds plotly, DT): [scripts/setup_renv.R](scripts/setup_renv.R)
+- Package imports: [DESCRIPTION](DESCRIPTION)
+
+Prerequisites
+- Make sure the characterization outputs exist:
+  - gaitpdb: outputs/gaitpdb/characterization_trials.csv
+  - gaitndd: outputs/gaitndd/characterization_records.csv
+- If not present, generate them:
+  - Rscript scripts/characterize_gaitpdb.R
+  - Rscript scripts/characterize_gaitndd.R
+
+Run the app
+- Initialize dependencies (renv):
+  - Rscript scripts/setup_renv.R
+- Launch:
+  - Direct: R -e "shiny::runApp('inst/app')"
+  - Via helper: R -e "devtools::load_all(); cosineR::run_app()"
+
+Notes
+- Interactivity uses plotly; tables use DT.
+- Raw trial viewer expects gaitpdb trial .txt files under datasets/gaitpdb/... (use the download script if needed).
 
 ---
 
