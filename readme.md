@@ -8,26 +8,7 @@
 
 ## Setup Initial R Repository
 
-This tutorial explains, in plain language, how this repository was set up to use R with Cosine.sh and what each moving part does. It links to a full, step-by-step transcript you can read at your own pace.
-
-What the transcript covers (plain English)
-- Reproducible setup (renv): A project-specific “list of packages and versions.” It makes your computer and your teammate’s computer use the same R packages. The .Rprofile file automatically turns this on when you open the project.
-- Your “toolbox” (R package): We created a simple R package (a folder of reusable functions). It includes:
-  - Functions in R/
-  - Help pages generated from short comments (roxygen2)
-  - Small tests to catch mistakes (testthat)
-- A small app (Shiny): A clickable web page that uses R. It lives in inst/app and you can open it with run_app(). Great for demos or quick exploration.
-- An example analysis: A single R script that reads data, summarizes it, and saves two files you can share: outputs/summary.csv and outputs/plot.png.
-- Automatic checks (CI): A GitHub “robot” that builds and tests the project each time you push changes. This helps catch problems early and keeps the project consistent.
-- Housekeeping: .gitignore and .Rbuildignore keep temporary files out of Git and out of your package build so you only share what matters.
-
-What you’ll learn by reading it
-- The basic vocabulary (renv, package, Shiny, CI) explained without jargon
-- How the folders fit together and where to put your own work
-- How analysis files produce shareable results in outputs/
-- How the Shiny app is bundled and launched
-- How automated checks protect your project over time
-- Tips for collaborating without “it works on my machine” problems
+This brief overview explains how the repo is prepared to use R with Cosine.sh: a reproducible environment (renv), a small R package with documented and tested functions, a simple Shiny app you can open, an example analysis that saves shareable results, and automated GitHub checks to keep things working. The linked transcript walks through why each piece exists, how the folders fit together, and collaboration tips—written for readers without a CS background.
 
 Transcript: [Setup Initial R Repository – full transcript](transcripts/r-repository-setup.md)
 
