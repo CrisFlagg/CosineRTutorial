@@ -119,3 +119,11 @@ GitHub Actions workflow (.github/workflows/R-CMD-check.yaml) runs R CMD check on
   - run_app(): launches the bundled Shiny app
 - .Rprofile auto-activates renv when present.
 - Edit DESCRIPTION to update package metadata (name, author, URLs) as needed.
+
+## Note on Creating Transcripts
+
+Transcripts in this repository are generated with an additional instruction added to the Cosine system prompt:
+
+"When you are instructed to create a transcript the purpose is to show the exact interactions that occurred during a session.  This will allow students to read the transcript and understand how to interact with Cosine.  The transcript should be a complete as possible, showing the user input and as close to the Cosine internal step-by-step process and end result as possible."
+
+A transcript of this discussion has been created and linked here: [Creating Transcripts – full transcript](transcripts/creating-transcripts.md)
