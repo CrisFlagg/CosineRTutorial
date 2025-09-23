@@ -1,8 +1,6 @@
 # Using Cosine.sh and R
 
-# Setup
-- git repository
-- Cosine.s account
+This project teaches students how to use Cosine to analyze data with R. It provides a reproducible R environment, guided tutorials, scripts for working with real datasets, and a simple Shiny app—so learners can practice end-to-end analysis and share results using Cosine.
 
 # Tutorials
 
