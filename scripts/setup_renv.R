@@ -11,6 +11,8 @@ if (!file.exists("renv/activate.R")) {
   renv::activate()
 }
 
+renv::load(project = getwd())
+
 pkgs <- c(
   "dplyr", "ggplot2", "tidyr", "readr",
   "shiny", "testthat", "devtools", "roxygen2",

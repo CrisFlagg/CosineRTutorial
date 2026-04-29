@@ -1,5 +1,7 @@
 suppressPackageStartupMessages({
-  library(tidyverse)
+  library(dplyr)
+  library(ggplot2)
+  library(tibble)
 })
 
 set.seed(123)
